@@ -9,10 +9,10 @@ script:
   - docker run -e CI=true sandeepsanvi/react-test npm test
 
 after_success:
-  - docker build -t sandeepsanvimulti-client ./client
-  - docker build -t sandeepsanvimulti-nginx ./nginx
-  - docker build -t sandeepsanvimulti-server ./server
-  - docker build -t sandeepsanvimulti-worker ./worker
+  - docker build -t sanvisan2021/sandeepsanvimulti-client ./client
+  - docker build -t sanvisan2021/sandeepsanvimulti-nginx ./nginx
+  - docker build -t sanvisan2021/sandeepsanvimulti-server ./server
+  - docker build -t sanvisan2021/sandeepsanvimulti-worker ./worker
   # Login to docker cli
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Push the image to Docker hub
