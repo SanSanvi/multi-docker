@@ -16,7 +16,7 @@ after_success:
   # Login to docker cli
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Push the image to Docker hub
-  - docker push sandeepsanvimulti-client
-  - docker push sandeepsanvimulti-nginx
-  - docker push sandeepsanvimulti-server
-  - docker push sandeepsanvimulti-worker
+  - docker push sanvisan2021/sandeepsanvimulti-client
+  - docker push sanvisan2021/sandeepsanvimulti-nginx
+  - docker push sanvisan2021/sandeepsanvimulti-server
+  - docker push sanvisan2021/sandeepsanvimulti-worker
